@@ -23,7 +23,7 @@ public class FilmManager {
         return items;
     }
 
-    public Film[] lastAdded() {
+    public Film[] findLast() {
         Film[] tmp = new Film[this.maxFilms];
         if (items.length <= this.maxFilms) {
             tmp = this.findAll();

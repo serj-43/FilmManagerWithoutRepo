@@ -38,7 +38,7 @@ public class ManagerTest {
         manager.addFilm(film2);
         manager.addFilm(film3);
         manager.addFilm(film4);
-        Film[] actual = manager.lastAdded();
+        Film[] actual = manager.findLast();
         Assertions.assertArrayEquals(expected, actual);
     }
 
@@ -50,7 +50,7 @@ public class ManagerTest {
         manager.addFilm(film2);
         manager.addFilm(film3);
         manager.addFilm(film4);
-        Film[] actual = manager.lastAdded();
+        Film[] actual = manager.findLast();
         Assertions.assertArrayEquals(expected, actual);
     }
 }
